@@ -43,7 +43,7 @@ class Server:
             return[]
         return data[start:end]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Any]:
         """Get page information"""
         total_pages = math.ceil(len(self.dataset()) / page_size)
         return {
