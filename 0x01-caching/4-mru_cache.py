@@ -18,8 +18,7 @@ class MRUCache(BaseCaching):
             return
 
         # If the cache is full and key is new, remove the MRU item
-        if key not in self.cache_data and len(self.cache_data)
-        >= BaseCaching.MAX_ITEMS:
+        if key not in self.cache_data and len(self.cache_data) >= BaseCaching.MAX_ITEMS:
             mru_key, _ = self.cache_data.popitem()
             print("DISCARD:", mru_key)
 
