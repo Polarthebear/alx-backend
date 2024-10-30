@@ -40,4 +40,3 @@ class LIFOCache(BaseCaching):
         Return value in self.cache_data linked to key
         """
         return self.cache_data.get(key)
-
