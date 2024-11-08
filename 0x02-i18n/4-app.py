@@ -20,7 +20,7 @@ app.config.from_object(Config)
 babel = Babel(app)
 
 
-@babel.localselector
+@babel.localeselector
 def get_locale() -> str:
     """Determines the best match with supported languages"""
     queries = request.query_string.decode('utf-8').split('&')
